@@ -1,0 +1,52 @@
+import SplitText from "./assets/reactbits/SplitText";
+import './styles/Banner.css'
+import coffee from "./assets/coffee.svg";
+import Nav from "./Nav";
+import Card from "./Card";
+
+function Banner() {
+  return (
+    <>
+      <header className="banner__container">
+        <Nav />
+        <section className="banner__items">
+          <div className="banner__items__text">
+            <SplitText
+              text="Crie o seu negócio"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-100px"
+            />
+            <SplitText
+              text="enquanto"
+              textAlign="left"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-100px"
+            />
+            <SplitText
+              text="toma um café."
+              textAlign="left"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-100px"
+            />
+            <img src={coffee} alt="Café" draggable="false"/>
+          </div>
+          <Card />
+        </section>
+      </header>
+    </>
+  );
+}
+
+export default Banner;

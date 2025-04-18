@@ -1,0 +1,25 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    gap: 1em;
+    color: white;
+    padding: 30px 50px 0 50px!important;
+    justify-content: space-between;
+}
+li{
+    font-size:2em;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+}
+.nav__btns{
+    display: flex;
+    gap: 2em;
+}
+
+a:focus{
+    outline: none;
+    border: 2px solid #008C64;
+}

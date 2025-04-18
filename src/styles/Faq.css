@@ -1,0 +1,123 @@
+.faq {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .faq h2 {
+    margin-top: 0 !important;
+    padding-top: 8%;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4.5rem !important;
+    font-family: "Space Grotesk", sans-serif;
+    color: #004E38;
+    text-align: center;
+  }
+  
+  .faq-accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .faq-item {
+    border: 1px solid #f8f8f5;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 75%;
+    border: 1px solid #d0d0d0;
+  }
+  
+  .faq-item h3 {
+    font-family: "Space Grotesk", sans-serif;
+    color: #004E38;
+  }
+  
+  .faq-trigger {
+    all: unset;
+    width: 100%;
+    background: #f4f4f4;
+    padding: 1.4rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .faq-trigger:hover {
+    background: #e2e2e2;
+  }
+  
+  .faq-content {
+    padding: 1rem;
+    background: white;
+    overflow: hidden;
+  }
+  
+
+  [data-state="open"] .faq-content {
+    animation: slideDown 0.2s ease forwards;
+  }
+  
+  [data-state="closed"] .faq-content {
+    animation: slideUp 0.2s ease forwards;
+  }
+  
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      max-height: 500px;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+      max-height: 500px;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-4px);
+      max-height: 0;
+    }
+  }
+  
+.faq__btn {
+    background: linear-gradient(to right, #32d17c, #28c167);
+    color: white;
+    width: 75%;
+    height: 55px;
+    margin: 25px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.75rem; 
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    justify-self: center;
+  }
+  
+  .faq__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(40, 193, 103, 0.4);
+  }
+  .faq__btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(40, 193, 103, 0.3);
+  }
+  
+  .faq__btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(40, 193, 103, 0.3);
+  }
