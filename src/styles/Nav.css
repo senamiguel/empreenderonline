@@ -23,3 +23,17 @@ a:focus{
     outline: none;
     border: 2px solid #008C64;
 }
+
+@media (max-width: 768px) {
+    .nav__btns li:not(:last-child) {
+        display: none;
+    }
+
+    ul {
+        padding: 20px 30px 0 30px !important;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+}
