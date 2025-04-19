@@ -12,7 +12,7 @@ function Banner() {
         <section className="banner__items">
           <div className="banner__items__text">
             <SplitText
-              text="Crie o seu negócio"
+              text="Crie sua empresa do zero"
               delay={150}
               animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
               animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
@@ -21,7 +21,7 @@ function Banner() {
               rootMargin="-100px"
             />
             <SplitText
-              text="enquanto"
+              text="com a ajuda da"
               textAlign="left"
               delay={150}
               animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
@@ -31,7 +31,7 @@ function Banner() {
               rootMargin="-100px"
             />
             <SplitText
-              text="toma um café."
+              text="Inteligência Artificial."
               textAlign="left"
               delay={150}
               animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}

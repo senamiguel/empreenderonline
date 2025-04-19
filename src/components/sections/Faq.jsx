@@ -9,42 +9,42 @@ function Faq() {
         <Accordion.Item value="item-1" className="faq-item">
           <Accordion.Header>
             <Accordion.Trigger className="faq-trigger">
-              <h3>Como funciona o Empreender Online?</h3>
+              <h3>Como a IA vai criar minha empresa?</h3>
               <svg className="chevron" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"/>
               </svg>
             </Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content className="faq-content">
-            O Empreender Online é uma plataforma que conecta empreendedores com mentores especializados. Você pode agendar consultorias personalizadas, participar de workshops e acessar recursos exclusivos para impulsionar seu negócio.
+            Nossa IA vai criar sua empresa do zero, desenvolvendo um site profissional, configurando campanhas de marketing, automatizando processos e gerenciando todo o negócio para você.
           </Accordion.Content>
         </Accordion.Item>
 
         <Accordion.Item value="item-2" className="faq-item">
           <Accordion.Header>
             <Accordion.Trigger className="faq-trigger">
-              <h3>Quais são os benefícios de ser um mentor?</h3>
+              <h3>Quanto tempo leva para ter minha empresa funcionando?</h3>
               <svg className="chevron" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"/>
               </svg>
             </Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content className="faq-content">
-            Como mentor, você terá a oportunidade de compartilhar seu conhecimento, construir sua reputação profissional, expandir sua rede de contatos e gerar renda adicional através das consultorias.
+            Em até 7 dias você terá seu site pronto e as primeiras campanhas de marketing rodando. Em 30 dias sua empresa estará totalmente estruturada e gerando resultados.
           </Accordion.Content>
         </Accordion.Item>
 
         <Accordion.Item value="item-3" className="faq-item">
           <Accordion.Header>
             <Accordion.Trigger className="faq-trigger">
-              <h3>Como são realizadas as consultorias?</h3>
+              <h3>Preciso ter conhecimento técnico ou experiência?</h3>
               <svg className="chevron" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"/>
               </svg>
             </Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content className="faq-content">
-            As consultorias são realizadas online através de videoconferência, com duração de 1 hora. Você pode agendar no horário mais conveniente para você e o mentor.
+            Não é necessário nenhum conhecimento técnico ou experiência. Você só precisa nos contar sobre sua ideia de negócio e a IA cuida de todo o resto, desde a criação do site até a gestão do negócio.
           </Accordion.Content>
         </Accordion.Item>
 
@@ -65,14 +65,14 @@ function Faq() {
         <Accordion.Item value="item-5" className="faq-item">
           <Accordion.Header>
             <Accordion.Trigger className="faq-trigger">
-              <h3>Posso cancelar ou reagendar uma consultoria?</h3>
+              <h3>Posso cancelar o serviço a qualquer momento?</h3>
               <svg className="chevron" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"/>
               </svg>
             </Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content className="faq-content">
-            Sim, você pode cancelar ou reagendar sua consultoria até 24 horas antes do horário agendado. Após esse período, será cobrada uma taxa de cancelamento.
+            Sim, você pode cancelar o serviço a qualquer momento sem multa. O cancelamento é efetivo no final do período contratado.
           </Accordion.Content>
         </Accordion.Item>
       </Accordion.Root>

@@ -7,7 +7,7 @@ import Thunder from "./assets/Thunder.svg";
 function Funciona() {
   return (
     <section className="funciona" id="funciona">
-      <h2>Como isso funciona?</h2>
+      <h2>Como criar sua empresa com IA?</h2>
       <div className="icons">
         <div className="icons__container">
           <TiltedCard
@@ -24,7 +24,7 @@ function Funciona() {
             showTooltip={false}
             displayOverlayContent={true}
           />
-          <p>Selecione o plano ideal<br></br>E adicione ao carrinho</p>
+          <p>Escolha seu plano<br></br>E comece sua jornada</p>
         </div>
         <div className="icons__container">
           <TiltedCard
@@ -41,7 +41,7 @@ function Funciona() {
             showTooltip={false}
             displayOverlayContent={true}
           />
-          <p>Preencha seus dados<br></br>Confirme seu pedido<br></br>Aguarde a confirmação</p>
+          <p>Conte sobre seu negócio<br></br>E deixe a IA criar tudo<br></br>Do zero ao sucesso</p>
         </div>
         <div className="icons__container">
           <TiltedCard
@@ -58,7 +58,7 @@ function Funciona() {
             showTooltip={false}
             displayOverlayContent={true}
           />
-          <p>Comece a usar<br></br>E transforme seu negócio</p>
+          <p>Empresa pronta<br></br>E funcionando</p>
         </div>
       </div>
     </section>

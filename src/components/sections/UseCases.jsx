@@ -8,20 +8,20 @@ import { Pagination, A11y, Autoplay } from 'swiper/modules';
 function UseCases() {
   const useCases = [
     {
-      title: "Gestão de Projetos",
-      description: "Organize e acompanhe seus projetos de forma eficiente, com visibilidade clara de prazos, responsáveis e progresso."
+      title: "Criação do Site",
+      description: "Nossa IA desenvolve um site profissional completo, com design moderno, otimizado para conversões e pronto para vender."
     },
     {
-      title: "Análise de Dados",
-      description: "Transforme dados em insights valiosos com relatórios personalizados e dashboards interativos."
+      title: "Tráfego Pago",
+      description: "Campanhas de anúncios otimizadas desde o primeiro dia, com IA gerenciando orçamentos e maximizando resultados."
     },
     {
-      title: "Comunicação Interna",
-      description: "Mantenha sua equipe alinhada com ferramentas de comunicação integradas e compartilhamento de documentos."
+      title: "Automação de Marketing",
+      description: "Sistema completo de marketing digital, incluindo email marketing, redes sociais e geração de leads qualificados."
     },
     {
-      title: "Automação de Processos",
-      description: "Reduza tarefas manuais e aumente a produtividade com automação de fluxos de trabalho."
+      title: "Gestão Completa",
+      description: "Soluções integradas para gestão financeira, atendimento ao cliente e análise de resultados do seu negócio."
     }
   ];
 
