@@ -1,6 +1,6 @@
 # Empreenda.online
 
-Landing page moderna e responsiva desenvolvida para a plataforma Empreenda.online.
+Landing page moderna e responsiva para um serviço de criação de empresas com Inteligência Artificial.
 
 ## 🚀 Tecnologias
 
@@ -14,16 +14,19 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Empreenda.online é uma plataforma que ajuda empreendedores a gerenciar seus negócios de forma mais eficiente. A landing page apresenta as principais funcionalidades e casos de uso da plataforma.
+O Empreenda.online é uma plataforma que utiliza Inteligência Artificial para criar e gerenciar empresas do zero. A IA cuida de todo o processo, desde a criação do site até a gestão do negócio, permitindo que empreendedores iniciem seus negócios de forma rápida e eficiente.
 
 ### Funcionalidades
 
+- Criação automática de sites profissionais
+- Gestão de tráfego pago otimizada por IA
+- Automação completa de marketing
+- Gestão integrada do negócio
 - Design responsivo para todos os dispositivos
 - Animações suaves e interativas
 - Carrossel de casos de uso
 - FAQ interativo
-- Seção de preços
-- Banner principal com call-to-action
+- Seção de preços com diferentes planos
 
 ## 🔧 Instalação
 
