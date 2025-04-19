@@ -1,6 +1,6 @@
 import SplitText from "./assets/reactbits/SplitText";
 import '../../styles/Banner.css'
-import coffee from "./assets/coffee.svg";
+import coffee from "./assets/Coffee.svg";
 import Nav from "../layout/Nav";
 import Card from "../common/Card";
 
