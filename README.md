@@ -1,12 +1,64 @@
-# React + Vite
+# Empreenda.online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page moderna e responsiva desenvolvida para a plataforma Empreenda.online.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Swiper
+- Framer Motion
+- CSS Moderno
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 Projeto
+
+O Empreenda.online é uma plataforma que ajuda empreendedores a gerenciar seus negócios de forma mais eficiente. A landing page apresenta as principais funcionalidades e casos de uso da plataforma.
+
+### Funcionalidades
+
+- Design responsivo para todos os dispositivos
+- Animações suaves e interativas
+- Carrossel de casos de uso
+- FAQ interativo
+- Seção de preços
+- Banner principal com call-to-action
+
+## 🔧 Instalação
+
+```bash
+# Clone o repositório
+git clone [url-do-repositório]
+
+# Entre no diretório
+cd empreenderonline
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+## 📱 Layout Responsivo
+
+O site é totalmente responsivo e se adapta aos seguintes breakpoints:
+
+- Mobile: até 768px
+- Tablet: 769px até 1024px
+- Desktop: acima de 1024px
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
+3. Commit suas mudanças (`git commit -m 'add: NovaFeature'`)
+4. Push para a branch (`git push origin feature/NovaFeature`)
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
