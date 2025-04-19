@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import './styles/UseCases.css';
+import '../../styles/UseCases.css';
 import { Pagination, A11y, Autoplay } from 'swiper/modules';
 
 function UseCases() {

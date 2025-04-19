@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 2rem;
     max-width: 1200px;
+    font-family: 'Inter', sans-serif;
 }
 
 .faq h2 {
@@ -10,8 +11,10 @@
     text-align: center;
     margin-bottom: 5rem;
     font-size: clamp(2.5rem, 4vw, 4.5rem) !important;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     color: #004E38;
+    letter-spacing: -0.02em;
 }
 
 .faq-accordion {
@@ -29,18 +32,26 @@
     overflow: hidden;
     width: 100%;
     max-width: 800px;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .faq-item:hover {
     border-color: #008C64;
 }
 
+.faq-item[data-state="open"] {
+    border-color: #008C64;
+    box-shadow: 0 4px 12px rgba(0, 140, 100, 0.1);
+}
+
 .faq-item h3 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     color: #004E38;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin: 0;
+    flex: 1;
+    letter-spacing: -0.01em;
 }
 
 .faq-trigger {
@@ -50,22 +61,38 @@
     padding: 1.4rem 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .faq-trigger:hover {
     background: #e2e2e2;
 }
 
+.faq-trigger[data-state="open"] {
+    background: #e8f5f1;
+}
+
+.chevron {
+    transition: transform 0.2s ease;
+    color: #004E38;
+}
+
+[data-state="open"] .chevron {
+    transform: rotate(180deg);
+}
+
 .faq-content {
-    padding: 1rem;
+    padding: 1.5rem;
     background: white;
     overflow: hidden;
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
-    line-height: 1.5;
+    line-height: 1.7;
+    color: #333;
+    font-weight: 400;
 }
 
 [data-state="open"] .faq-content {
@@ -117,6 +144,8 @@
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: block;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.02em;
 }
 
 .faq__btn:hover {
@@ -144,7 +173,7 @@
     }
 
     .faq-content {
-        padding: 0.8rem;
+        padding: 1rem;
     }
 }
 

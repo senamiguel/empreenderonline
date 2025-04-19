@@ -1,4 +1,4 @@
-import './styles/Funciona.css'
+import '../../styles/Funciona.css'
 import TiltedCard from "./assets/reactbits/TiltedCard";
 import Cart from "./assets/Cart.svg";
 import Letter from "./assets/Letter.svg";
@@ -24,7 +24,7 @@ function Funciona() {
             showTooltip={false}
             displayOverlayContent={true}
           />
-          <p>Lorem Ipsum <br></br>dolor sit <br></br>amet</p>
+          <p>Selecione o plano ideal<br></br>E adicione ao carrinho</p>
         </div>
         <div className="icons__container">
           <TiltedCard
@@ -41,7 +41,7 @@ function Funciona() {
             showTooltip={false}
             displayOverlayContent={true}
           />
-          <p>Lorem Ipsum <br></br>dolor sit <br></br>amet</p>
+          <p>Preencha seus dados<br></br>Confirme seu pedido<br></br>Aguarde a confirmação</p>
         </div>
         <div className="icons__container">
           <TiltedCard
@@ -58,7 +58,7 @@ function Funciona() {
             showTooltip={false}
             displayOverlayContent={true}
           />
-          <p>Lorem Ipsum <br></br>dolor sit <br></br>amet</p>
+          <p>Comece a usar<br></br>E transforme seu negócio</p>
         </div>
       </div>
     </section>

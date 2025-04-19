@@ -1,9 +1,10 @@
 import './styles/App.css'
-import Funciona from './Funciona'
-import Banner from './banner'
-import UseCases from './UseCases'
-import Pricing from './Pricing'
-import Faq from './Faq'
+import Funciona from './components/sections/Funciona'
+import Banner from './components/sections/banner'
+import UseCases from './components/sections/UseCases'
+import Pricing from './components/sections/Pricing'
+import Faq from './components/sections/Faq'
+import Footer from './components/layout/Footer'
 function App() {
 
 
@@ -14,6 +15,7 @@ function App() {
       <UseCases></UseCases>
       <Pricing></Pricing>
       <Faq></Faq>
+      <Footer></Footer>
     </main>
   )
 }

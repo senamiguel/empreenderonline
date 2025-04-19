@@ -1,8 +1,8 @@
 import SplitText from "./assets/reactbits/SplitText";
-import './styles/Banner.css'
+import '../../styles/Banner.css'
 import coffee from "./assets/coffee.svg";
-import Nav from "./Nav";
-import Card from "./Card";
+import Nav from "../layout/Nav";
+import Card from "../common/Card";
 
 function Banner() {
   return (

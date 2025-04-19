@@ -1,102 +1,120 @@
 .card__items__container {
-  background-color: rgba(255, 255, 255, 0.33);
-  border-radius: 44px;
-  margin-top: 3%;
-  margin-left: 7%;
-  width: 30%;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
+
 .card__items__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
 }
+
+.card__items__form:hover {
+  transform: translateY(-5px);
+}
+
 .card__items__form__header {
-  background-color: #ffffff;
-  width: 90%;
-  height: 10vh;
-  border-radius: 40px 40px 0 0;
-  margin-top: 30px;
-  border-bottom: 1px solid #ededed;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
 }
+
+.card__items__form__title {
+  color: #004E38;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
 .card__items__form__content {
   display: flex;
   flex-direction: column;
-  height: 37.5vh;
-  width: 90%;
-  align-items: center;
-  border-radius: 0 0 40px 40px;
-  background: #faf8fa;
-  background: linear-gradient(
-    0deg,
-    rgba(250, 248, 250, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
-.card__items__form__title {
-  font-size: 2rem;
-  padding-left: 8%;
-  margin-top: 35px;
-  font-weight: 500;
-}
+
 .card__items__form__input {
-  width: 80%;
-  height: 30px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid rgba(0, 0, 0, 20%);
-  border-radius: 15px;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #EFEFE9;
+  border-radius: 10px;
   font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #333;
+  transition: all 0.3s ease;
+  background: #F8F8F8;
+  box-sizing: border-box;
 }
 
 .card__items__form__input:focus {
   outline: none;
-  border: 1px solid #008c64;
+  border-color: #004E38;
+  background: #ffffff;
 }
 
-.bigger {
-  padding-bottom: 90px;
-  height: 20px;
-  line-height: 40px;
-  overflow: hidden;
-  resize: none;
+.card__items__form__input::placeholder {
+  color: #888;
 }
+
+.card__items__form__input.bigger {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.card__items__form__input select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}
+
 .card__items__form_btn {
-  background: linear-gradient(to right, #32d17c, #28c167);
+  background: #004E38;
   color: white;
-  width: 85%;
-  height: 55px;
-  font-weight: 600;
-  font-size: 1.5rem;
-  padding: 0.75rem 2rem;
   border: none;
-  border-radius: 0.75rem; 
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card__items__form_btn:hover {
+  background: #003825;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(40, 193, 103, 0.4);
-}
-.card__items__form_btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(40, 193, 103, 0.3);
-}
-
-.card__items__form_btn:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(40, 193, 103, 0.3);
 }
 
 @media (max-width: 768px) {
   .card__items__container {
     display: none;
   }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .card__items__container {
-    width: 40%;
-    margin-left: 5%;
+  
+  .card__items__form {
+    padding: 1.5rem;
+  }
+  
+  .card__items__form__title {
+    font-size: 1.3rem;
+  }
+  
+  .card__items__form__input {
+    padding: 0.8rem;
   }
 }
