@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/App.css'
 import Funciona from './components/sections/Funciona'
-import Banner from './components/sections/banner'
+import Banner from './components/sections/Banner'
 import UseCases from './components/sections/UseCases'
 import Pricing from './components/sections/Pricing'
 import Faq from './components/sections/Faq'
