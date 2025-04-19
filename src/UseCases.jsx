@@ -3,47 +3,73 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import './styles/UseCases.css';
-import { Pagination, A11y, Autoplay} from 'swiper/modules';
-import { text } from 'framer-motion/client';
+import { Pagination, A11y, Autoplay } from 'swiper/modules';
 
 function UseCases() {
+  const useCases = [
+    {
+      title: "Gestão de Projetos",
+      description: "Organize e acompanhe seus projetos de forma eficiente, com visibilidade clara de prazos, responsáveis e progresso."
+    },
+    {
+      title: "Análise de Dados",
+      description: "Transforme dados em insights valiosos com relatórios personalizados e dashboards interativos."
+    },
+    {
+      title: "Comunicação Interna",
+      description: "Mantenha sua equipe alinhada com ferramentas de comunicação integradas e compartilhamento de documentos."
+    },
+    {
+      title: "Automação de Processos",
+      description: "Reduza tarefas manuais e aumente a produtividade com automação de fluxos de trabalho."
+    }
+  ];
+
   return (
     <section className="use-cases">
-      <h2>Exemplos e caso de uso</h2>
+      <div className="use-cases__container">
+        <h2>Como podemos ajudar seu negócio</h2>
 
-      <Swiper
-        modules={[Pagination, A11y, Autoplay]}
-        fadeEffect={{ crossFade: true }}
-        spaceBetween={0}
-        slidesPerView={3}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-      >
-        <SwiperSlide>
-          <div className="use-case-card">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ex laboriosam ea voluptate ipsam beatae perferendis sint, assumenda natus provident eius maiores at nihil tempora minus iusto? Dicta, impedit doloribus!</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="use-case-card">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sequi et, placeat asperiores dignissimos dolorum neque sint sapiente veritatis voluptate in quam ducimus temporibus? Corporis consequatur enim omnis deleniti dicta?</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="use-case-card">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aperiam eligendi eius incidunt similique reprehenderit, atque repellendus dolor iure recusandae voluptatem et ratione commodi totam, culpa deleniti ex sunt doloribus.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="use-case-card">
-            <h3>Relatórios Dinâmicos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti reprehenderit cupiditate voluptates fuga fugiat nesciunt maxime laboriosam asperiores nisi quos, molestiae aperiam cumque suscipit nam provident neque amet natus!</p>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        <Swiper
+          modules={[Pagination, A11y, Autoplay]}
+          fadeEffect={{ crossFade: true }}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          autoplay={{ 
+            delay: 3000, 
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true 
+          }}
+          pagination={{ 
+            clickable: true,
+            dynamicBullets: true
+          }}
+          loop={true}
+        >
+          {useCases.map((useCase, index) => (
+            <SwiperSlide key={index}>
+              <div className="use-case-card">
+                <h3>{useCase.title}</h3>
+                <p>{useCase.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 }
