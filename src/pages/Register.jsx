@@ -25,8 +25,8 @@ const Register = () => {
   };
 
   return (
-    <main className="login-container">
-      <div className="login-background">
+    <div className="login-container">
+      <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: 0 }}>
         <Threads
           amplitude={2}
           distance={1}
@@ -34,12 +34,10 @@ const Register = () => {
           color={[0, 0.55, 0.39]} 
         />
       </div>
-      <article className="login-box">
-        <header>
-          <h2>Criar Conta</h2>
-        </header>
+      <div className="login-box">
+        <h2>Criar Conta</h2>
         <form onSubmit={handleSubmit}>
-          <fieldset className="input-group">
+          <div className="input-group">
             <label htmlFor="name">Nome</label>
             <input
               type="text"
@@ -48,10 +46,9 @@ const Register = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              aria-required="true"
             />
-          </fieldset>
-          <fieldset className="input-group">
+          </div>
+          <div className="input-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -60,10 +57,9 @@ const Register = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              aria-required="true"
             />
-          </fieldset>
-          <fieldset className="input-group">
+          </div>
+          <div className="input-group">
             <label htmlFor="password">Senha</label>
             <input
               type="password"
@@ -72,10 +68,9 @@ const Register = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              aria-required="true"
             />
-          </fieldset>
-          <fieldset className="input-group">
+          </div>
+          <div className="input-group">
             <label htmlFor="confirmPassword">Confirmar Senha</label>
             <input
               type="password"
@@ -84,20 +79,19 @@ const Register = () => {
               value={formData.confirmPassword}
               onChange={handleChange}
               required
-              aria-required="true"
             />
-          </fieldset>
+          </div>
           <button type="submit" className="login-button">
             Criar Conta
           </button>
         </form>
-        <footer className="login-links">
+        <div className="login-links">
           <p>
             Já tem uma conta? <Link to="/login">Faça login</Link>
           </p>
-        </footer>
-      </article>
-    </main>
+        </div>
+      </div>
+    </div>
   );
 };
 

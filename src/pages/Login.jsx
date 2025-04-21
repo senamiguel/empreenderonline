@@ -13,8 +13,8 @@ const Login = () => {
   };
 
   return (
-    <main className="login-container">
-      <div className="login-background">
+    <div className="login-container">
+      <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: 0 }}>
         <Threads
           amplitude={2}
           distance={1}
@@ -22,12 +22,10 @@ const Login = () => {
           color={[0, 0.55, 0.39]} 
         />
       </div>
-      <article className="login-box">
-        <header>
-          <h2>Login</h2>
-        </header>
+      <div className="login-box">
+        <h2>Login</h2>
         <form onSubmit={handleSubmit}>
-          <fieldset className="input-group">
+          <div className="input-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -35,10 +33,9 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              aria-required="true"
             />
-          </fieldset>
-          <fieldset className="input-group">
+          </div>
+          <div className="input-group">
             <label htmlFor="password">Senha</label>
             <input
               type="password"
@@ -46,21 +43,20 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              aria-required="true"
             />
-          </fieldset>
+          </div>
           <button type="submit" className="login-button">
             Entrar
           </button>
         </form>
-        <footer className="login-links">
+        <div className="login-links">
           <Link to="/forgot-password">Esqueceu sua senha?</Link>
           <p>
             Não tem uma conta? <Link to="/register">Registre-se</Link>
           </p>
-        </footer>
-      </article>
-    </main>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -8,12 +8,12 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Password reset request for:', email);
+    console.log('Password reset requested for:', email);
   };
 
   return (
-    <main className="login-container">
-      <div className="login-background">
+    <div className="login-container">
+      <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: 0 }}>
         <Threads
           amplitude={2}
           distance={1}
@@ -21,13 +21,10 @@ const ForgotPassword = () => {
           color={[0, 0.55, 0.39]} 
         />
       </div>
-      <article className="login-box">
-        <header>
-          <h2>Recuperar Senha</h2>
-          <p>Digite seu email para receber as instruções de recuperação de senha.</p>
-        </header>
+      <div className="login-box">
+        <h2>Recuperar Senha</h2>
         <form onSubmit={handleSubmit}>
-          <fieldset className="input-group">
+          <div className="input-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -35,18 +32,18 @@ const ForgotPassword = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              aria-required="true"
+              placeholder="Digite seu email cadastrado"
             />
-          </fieldset>
+          </div>
           <button type="submit" className="login-button">
-            Enviar Instruções
+            Enviar Link de Recuperação
           </button>
         </form>
-        <footer className="login-links">
+        <div className="login-links">
           <Link to="/login">Voltar para o login</Link>
-        </footer>
-      </article>
-    </main>
+        </div>
+      </div>
+    </div>
   );
 };
 

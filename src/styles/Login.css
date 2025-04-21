@@ -9,19 +9,10 @@
   padding: 1rem;
 }
 
-.login-background {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
 .login-box {
   background: rgba(255, 255, 255, 0.95);
   padding: 2.5rem;
-  border-radius: 20px;
+  border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 420px;
@@ -29,87 +20,69 @@
   z-index: 1;
   margin: 0 auto;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 78, 56, 0.1);
-}
-
-.login-box header {
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 .login-box h2 {
-  color: #004E38;
+  text-align: center;
+  color: #008C64;
   margin-bottom: 2rem;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
-  letter-spacing: 0.5px;
 }
 
-fieldset.input-group {
+.input-group {
   margin-bottom: 1.5rem;
   width: 100%;
-  border: none;
-  padding: 0;
 }
 
 .input-group label {
   display: block;
   margin-bottom: 0.75rem;
-  color: #333;
+  color: #4a5568;
   font-weight: 500;
   font-size: 0.95rem;
-  font-family: 'Space Grotesk', sans-serif;
 }
 
 .input-group input {
   width: 100%;
   padding: 0.875rem 1rem;
-  border: 2px solid #EFEFE9;
-  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   background: rgba(255, 255, 255, 0.9);
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
-  color: #333;
 }
 
 .input-group input:focus {
   outline: none;
-  border-color: #004E38;
-  box-shadow: 0 0 0 3px rgba(0, 78, 56, 0.1);
+  border-color: #008C64;
+  box-shadow: 0 0 0 3px rgba(0, 140, 100, 0.1);
   background: white;
-}
-
-.input-group input::placeholder {
-  color: #888;
 }
 
 .login-button {
   width: 100%;
-  padding: 1rem;
-  background: #004E38;
+  padding: 0.875rem 1rem;
+  background: linear-gradient(86deg, #008c64 15%,#3dcb90 100%);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   margin-top: 2rem;
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .login-button:hover {
-  background: #003825;
-  transform: translateY(-2px);
+  background: linear-gradient(86deg, #007a57 15%,#36b782 100%);
+  transform: translateY(-1px);
 }
 
-.login-box footer {
+.login-links {
   margin-top: 2.5rem;
   text-align: center;
   display: flex;
@@ -118,21 +91,20 @@ fieldset.input-group {
 }
 
 .login-links a {
-  color: #004E38;
+  color: #008C64;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   padding: 0.5rem 0;
-  font-family: 'Space Grotesk', sans-serif;
 }
 
 .login-links a:hover {
-  color: #003825;
+  color: #007a57;
+  text-decoration: underline;
 }
 
 .login-links p {
-  color: #333;
-  font-family: 'Space Grotesk', sans-serif;
   margin: 0;
+  color: #4a5568;
   font-size: 0.95rem;
 } 

@@ -11,7 +11,6 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
 import Card from './components/common/Card'
-import ContactPage from './pages/ContactPage'
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -49,7 +48,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/contato" element={<ContactPage />} />
       </Routes>
     </Router>
   )
