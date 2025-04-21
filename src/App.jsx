@@ -7,6 +7,8 @@ import Pricing from './components/sections/Pricing'
 import Faq from './components/sections/Faq'
 import Footer from './components/layout/Footer'
 import Login from './pages/Login'
+import Register from './pages/Register'
+import ForgotPassword from './pages/ForgotPassword'
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           }
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </Router>
   )
