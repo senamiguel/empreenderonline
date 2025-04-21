@@ -3,6 +3,9 @@
     padding: 2rem;
     max-width: 1200px;
     font-family: 'Inter', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .faq h2 {
@@ -24,6 +27,8 @@
     justify-content: center;
     gap: 1rem;
     width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .faq-item {
@@ -66,6 +71,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    box-sizing: border-box;
 }
 
 .faq-trigger:hover {
@@ -93,6 +99,7 @@
     line-height: 1.7;
     color: #333;
     font-weight: 400;
+    box-sizing: border-box;
 }
 
 [data-state="open"] .faq-content {
@@ -166,6 +173,10 @@
 @media (max-width: 768px) {
     .faq {
         padding: 1rem;
+    }
+    
+    .faq-accordion {
+        padding: 0;
     }
 
     .faq-trigger {

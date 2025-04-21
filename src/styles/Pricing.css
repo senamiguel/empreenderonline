@@ -2,6 +2,8 @@
     background-color: #F1F1ED;
     background: linear-gradient(0deg, #ffffff, #E8E8E8);
     padding: 2rem 0;
+    width: 100%;
+    overflow: hidden;
 }
 #pricing__title{
     margin-top: 0!important;
@@ -20,6 +22,10 @@
     gap: 2rem;
     flex-wrap: wrap;
     padding: 0 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .pricing__container__figure{
     font-family: "Space Grotesk", sans-serif;
