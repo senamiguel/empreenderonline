@@ -1,0 +1,11 @@
+.mobile-card-container {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .mobile-card-container {
+    display: none;
+  }
+}

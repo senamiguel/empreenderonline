@@ -25,6 +25,16 @@
     margin-top: 4%;
 }
 
+.desktop-card {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .desktop-card {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
     .banner__items {
         flex-direction: column;

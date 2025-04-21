@@ -42,7 +42,9 @@ function Banner() {
             />
             <img src={coffee} alt="Café" draggable="false"/>
           </div>
-          <Card />
+          <div className="desktop-card">
+            <Card />
+          </div>
         </section>
       </header>
     </>

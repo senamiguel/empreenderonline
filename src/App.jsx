@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './styles/App.css'
 import Funciona from './components/sections/Funciona'
 import Banner from './components/sections/Banner'
@@ -9,8 +10,20 @@ import Footer from './components/layout/Footer'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
+import Card from './components/common/Card'
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <Router>
       <Routes>
@@ -23,6 +36,11 @@ function App() {
               <UseCases></UseCases>
               <Pricing></Pricing>
               <Faq></Faq>
+              {isMobile && (
+                <div className="mobile-card-container">
+                  <Card />
+                </div>
+              )}
               <Footer></Footer>
             </main>
           }
