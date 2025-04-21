@@ -23,7 +23,6 @@
     flex-wrap: wrap;
     padding: 0 2rem;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -38,6 +37,7 @@
     border-radius: 30px;
     border: 1px solid #C5C5C5;
     flex-direction: column;
+    box-sizing: content-box;
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

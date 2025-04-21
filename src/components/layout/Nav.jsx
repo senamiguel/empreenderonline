@@ -23,7 +23,7 @@ function Nav() {
           <menu className="nav-menu">
             <li><Link to="/sobre" aria-label="Sobre nós">Sobre</Link></li>
             <li><Link to="/contato" aria-label="Entre em contato">Contato</Link></li>
-            <li><Link to="/comecar" className="nav-menu__start" aria-label="Comece agora">Começar</Link></li>
+            <li><Link to="/register" aria-label="Cadastrar-se">Cadastrar</Link></li>
             <li><Link to="/login" aria-label="Faça login">Login</Link></li>
           </menu>
         </nav>
