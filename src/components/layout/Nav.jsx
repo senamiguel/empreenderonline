@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,12 +16,28 @@ function Nav() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <header className={`main-header ${isScrolled ? 'scrolled fixed' : ''}`}>
         <nav className="main-nav" aria-label="Navegação principal">
           <Link to="/" className="logo" aria-label="Página inicial">Empreenda.online</Link>
-          <menu className="nav-menu">
+          
+          <button 
+            className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} 
+            onClick={toggleMenu}
+            aria-label="Abrir menu"
+            aria-expanded={isMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <menu className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <li><Link to="/sobre" aria-label="Sobre nós">Sobre</Link></li>
             <li><Link to="/contato" aria-label="Entre em contato">Contato</Link></li>
             <li><Link to="/register" aria-label="Cadastrar-se">Cadastrar</Link></li>

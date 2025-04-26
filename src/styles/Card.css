@@ -30,7 +30,7 @@
 
 .card__items__form__title {
   color: #004E38;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 600;
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
@@ -49,7 +49,7 @@
   padding: 1rem;
   border: 2px solid #EFEFE9;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-family: "Space Grotesk", sans-serif;
   color: #333;
   transition: all 0.3s ease;
@@ -81,13 +81,17 @@
   padding-right: 2.5rem;
 }
 
+.card__items__form label {
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+}
+
 .card__items__form_btn {
   background: #004E38;
   color: white;
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -119,5 +123,90 @@
   
   .card__items__form__input {
     padding: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .card__items__container {
+    max-width: 350px;
+    padding: 0.75rem;
+  }
+  .card__items__form {
+    padding: 1.5rem;
+  }
+  .card__items__form__title {
+    font-size: 1.1rem;
+  }
+  .card__items__form__content {
+    gap: 0.75rem;
+  }
+  .card__items__form__input {
+    padding: 0.5rem;
+  }
+  .card__items__form__input.bigger {
+    min-height: 80px;
+  }
+  .card__items__form_btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+  .card__items__container {
+    max-width: 380px;
+    padding: 1rem;
+  }
+  .card__items__form {
+    padding: 1.25rem;
+  }
+  .card__items__form__title {
+    font-size: 1.2rem;
+  }
+  .card__items__form__content {
+    gap: 1rem;
+  }
+  .card__items__form__input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+  .card__items__form__input.bigger {
+    min-height: 90px;
+  }
+  .card__items__form label {
+    font-size: 0.95rem;
+  }
+  .card__items__form_btn {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .card__items__container {
+    max-width: 400px;
+    padding: 1rem;
+  }
+  .card__items__form {
+    padding: 0.8rem;
+  }
+  .card__items__form__content {
+    gap: 0.7rem;
+  }
+  .card__items__form__input.bigger {
+    min-height: 70px;
+  }
+  .card__items__form_btn {
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .card__items__container {
+    max-width: 420px;
+    padding: 1rem;
+  }
+  .card__items__form {
+    padding: 1rem;
   }
 }
