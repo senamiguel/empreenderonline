@@ -6,10 +6,9 @@ html, body {
 
 .contact-page {
   min-height: 100vh;
+  width: 100%;
   position: relative;
   z-index: 1;
-  overflow: hidden;
-  height: 100vh;
 }
 
 .contact-page__content {
@@ -22,13 +21,17 @@ html, body {
   padding: 2rem;
   position: relative;
   z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-page__info {
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
 }
 
 .contact-page__info h1 {
@@ -82,17 +85,64 @@ html, body {
   font-family: "Space Grotesk", sans-serif;
 }
 
-@media (max-width: 768px) {
+.contact-page__content > form, .contact-page__content > div:last-child {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 900px) {
   .contact-page__content {
     grid-template-columns: 1fr;
     padding: 1rem;
+    gap: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
-  
   .contact-page__info {
     padding: 1rem;
   }
-  
   .contact-page__info h1 {
     font-size: 2rem;
   }
+  .contact-page__details {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-page__content {
+    padding: 0.5rem;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-page__info {
+    padding: 0.5rem;
+  }
+  .contact-page__info h1 {
+    font-size: 1.3rem;
+  }
+  .contact-page__detail {
+    padding: 1rem;
+  }
+}
+
+.back-button {
+  background: #004E38;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+.back-button:hover {
+  background: #003825;
 } 

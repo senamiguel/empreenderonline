@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 import Threads from '../components/common/Threads';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,6 +23,7 @@ const ForgotPassword = () => {
         />
       </div>
       <div className="login-box">
+        <button className="back-button" onClick={() => navigate(-1)} style={{position: 'relative', zIndex: 2, margin: '0 0 1rem 0'}}>Voltar</button>
         <h2>Recuperar Senha</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">

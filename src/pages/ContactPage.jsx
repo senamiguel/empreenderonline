@@ -1,11 +1,14 @@
 import Contact from '../components/Contact';
 import '../styles/ContactPage.css';
 import Threads from '../components/common/Threads';
+import { useNavigate } from 'react-router-dom';
 
 function ContactPage() {
+  const navigate = useNavigate();
   return (
     <div className="contact-page">
-      <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: 0 }}>
+      <button className="back-button" onClick={() => navigate(-1)} style={{position: 'relative', zIndex: 2, margin: '1rem 0 0 1rem'}}>Voltar</button>
+      <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, zIndex: 0 }}>
         <Threads
           amplitude={2}
           distance={1}

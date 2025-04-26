@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 import Threads from '../components/common/Threads';
 
@@ -10,6 +10,7 @@ const Register = () => {
     password: '',
     confirmPassword: ''
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,6 +36,7 @@ const Register = () => {
         />
       </div>
       <div className="login-box">
+        <button className="back-button" onClick={() => navigate(-1)} style={{position: 'relative', zIndex: 2, margin: '0 0 1rem 0'}}>Voltar</button>
         <h2>Criar Conta</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">

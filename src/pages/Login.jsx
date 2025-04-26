@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 import AuthLayout from '../components/layout/AuthLayout';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +16,7 @@ const Login = () => {
   return (
     <AuthLayout>
       <article className="login-box">
+        <button className="back-button" onClick={() => navigate(-1)} style={{position: 'relative', zIndex: 2, margin: '0 0 1rem 0'}}>Voltar</button>
         <header>
           <h2>Login</h2>
         </header>
